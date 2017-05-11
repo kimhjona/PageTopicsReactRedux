@@ -8,6 +8,21 @@ class TopicList extends Component {
         <div className='listItem'>
           <span className='bold'>Common Topics</span>  <span className='grey'>(Select to receive content on your feed)</span>
           <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
+          <Topic />
         </div>
       </div>
     );
