@@ -3,7 +3,7 @@ import Header from './Header';
 import ArtList from './ArtList';
 import TopicList from './TopicList';
 import { Switch, Route } from 'react-router-dom';
-import './App.css';
+import '../App.css';
 
 const Main = () => (
   <main>

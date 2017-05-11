@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
-import './App.css';
+// import './App.css';
 
 class ArtList extends Component {
   render() {

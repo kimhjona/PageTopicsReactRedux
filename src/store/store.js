@@ -8,8 +8,7 @@ import rootReducer from '../reducers/index';
 
 // create object for default data
 const defaultState = {
-  first: 'Jon',
-  last: 'Kim'
+  names: "Jon Kim"
 }
 
 const store = createStore(rootReducer, defaultState);

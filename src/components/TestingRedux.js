@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 
 class TestingRedux extends Component {
   render() {
@@ -14,4 +14,4 @@ class TestingRedux extends Component {
 
 export default TestingRedux;
 
-
+*/

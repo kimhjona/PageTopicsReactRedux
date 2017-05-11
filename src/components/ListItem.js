@@ -18,7 +18,7 @@ class ListItem extends Component {
           levels were linked with these "atopic" conditions. <a className='a' href='#'>Read More</a>
         </div>
         <hr/>
-        <span className='like'><img src={require('./img/thumbsup.png')} className='likeImg' alt="Like Button" width='20' height='20'/>26 Likes</span>
+        <span className='like'><img src={require('../img/thumbsup.png')} className='likeImg' alt="Like Button" width='20' height='20'/>26 Likes</span>
       </div>
     );
   }
