@@ -8,7 +8,7 @@ import './App.css';
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/'/>
+      <Route exact path='/' component={ArtList}/>
       <Route path='/home' component={ArtList}/>
       <Route path='/topics' component={TopicList}/>
     </Switch>

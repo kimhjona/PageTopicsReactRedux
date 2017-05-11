@@ -104,7 +104,8 @@ p {
 
 .button {
   text-decoration: none;
-  border: none;
+  border: .5px solid rgba(64, 56, 58, .1);
+  border-radius: 3px;
   background-color: white;
   cursor: pointer;
   color: #40383a;
