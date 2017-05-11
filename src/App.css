@@ -1,24 +1,159 @@
-.App {
+html,
+body {
+  color: #40383a;
+  font-family: HelveticaNeue, Helvetica, Arial, sans-serif!important;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+hr {
+  margin-top: 20px;
+  border-bottom: rgba(64, 56, 58, .1);
+}
+
+h1 {
+  margin: 7px 0 7px 0;
+}
+
+p {
+  margin: 7px 0 7px 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(64, 56, 58, .5);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.listItem {
+  border: 1px solid rgba(64, 56, 58, .1);
+  border-radius: 3px;
+  padding: 2em;
+  background-color: white;
+  margin: 10px 0 10px 0;
+}
+
+.entireList {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grey {
+  color: rgba(64, 56, 58, .5);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.summary {
+  margin: 20px 0 50px 0;
+  line-height: 1.62;
+}
+
+.follow {
+  margin-top: -2px;
+  border: 1px solid rgba(64, 56, 58, .1);
+  border-radius: 3px;
+  color: #40383a;
+  cursor: pointer;
+  padding: 0 8px 2px 8px;
+  font-size: 15px;
+}
+
+.red {
+  color: #b5103a;
+}
+
+.check {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.topicItem {
+  padding-bottom: 10px;
+  color: #40383a;
+}
+
+.header {
+  width: 100%;
+  background-color: #b5103a;
+  color: white;
+  padding: 10px 0 10px 0;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+button {
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: #40383a;
+  padding: 5px 9px;
+  margin-left: 9px;
+  font-weight: bold;
+  font-size: 1.5em; 
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+button:hover {
+  color: #b5103a;
 }
 
-.App-intro {
-  font-size: large;
+.fancyFont {
+  font: 5em 'Kaushan Script', cursive;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.like {
+  display: flex;
+  align-items: flex-end;
+  color: rgba(64, 56, 58, .5);
+}
+
+.likeImg {
+  margin-right: 5px;
+}
+
+/* Responsive Functionality */
+
+@media screen and (max-width: 700px) {
+  .fancyFont {
+    font: 3em 'Kaushan Script', cursive;
+  }
+  button {
+    font-size: 1em; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fancyFont {
+    font: 2em 'Kaushan Script', cursive;
+  }
+  button {
+    font-size: 1em; 
+    width: 50%;
+    margin: 0;
+    border: 1px solid #40383a;
+    bottom: 0;
+  }
+  .header {
+    padding: 10px 0 0 0;
+  }
+  .listItem {
+    margin: 0;
+  }
 }
