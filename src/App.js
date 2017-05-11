@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import ArtList from './ArtList';
 import TopicList from './TopicList';
-import { BrowserRouter, Link, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 const Main = () => (

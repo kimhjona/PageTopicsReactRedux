@@ -18,16 +18,20 @@ h1 {
   margin: 7px 0 7px 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   margin: 7px 0 7px 0;
 }
 
-a {
+.a {
   text-decoration: none;
   color: rgba(64, 56, 58, .5);
 }
 
-a:hover {
+.a:hover {
   text-decoration: underline;
 }
 
@@ -98,7 +102,7 @@ a:hover {
   text-align: center;
 }
 
-button {
+.button {
   text-decoration: none;
   border: none;
   background-color: white;
@@ -110,8 +114,9 @@ button {
   font-size: 1.5em; 
 }
 
-button:hover {
+.button:hover {
   color: #b5103a;
+  text-decoration: none;
 }
 
 .fancyFont {
@@ -128,13 +133,18 @@ button:hover {
   margin-right: 5px;
 }
 
+.activeLink {
+  text-decoration: underline #b5103a;
+  color: #b5103a !important;
+}
+
 /* Responsive Functionality */
 
 @media screen and (max-width: 700px) {
   .fancyFont {
     font: 3em 'Kaushan Script', cursive;
   }
-  button {
+  .button {
     font-size: 1em; 
   }
 }
@@ -143,7 +153,7 @@ button:hover {
   .fancyFont {
     font: 2em 'Kaushan Script', cursive;
   }
-  button {
+  .button {
     font-size: 1em; 
     width: 50%;
     margin: 0;

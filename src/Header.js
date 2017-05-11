@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -8,8 +8,8 @@ class Header extends Component {
         <div className='header'>
           <span className='fancyFont'>PageTopicsReactRedux</span>
           <p>
-            <Link to='/home'><button>Articles</button></Link>
-            <Link to='/topics'><button>Topics</button></Link>
+            <span className='button'><NavLink to='/home' activeClassName='activeLink'>Articles</NavLink></span>
+            <span className='button'><NavLink to='/topics' activeClassName='activeLink'>Topics</NavLink></span>
           </p>
         </div>
       </div>

@@ -15,7 +15,7 @@ class ListItem extends Component {
           For the new study, Canadian researchers analyzed data from more than 100,000 people to determine if this was true. TUESDAY,
           May 9, 2017 (HealthDay News) -- Vitamin D supplements aren't likely to reduce the risk of asthma, allergies or the
           skin condition eczema in children or adults, a new study finds. Previous research had suggested that low vitamin D
-          levels were linked with these "atopic" conditions. <a href='#'>Read More</a>
+          levels were linked with these "atopic" conditions. <a className='a' href='#'>Read More</a>
         </div>
         <hr/>
         <span className='like'><img src={require('./img/thumbsup.png')} className='likeImg' alt="Like Button" width='20' height='20'/>26 Likes</span>
