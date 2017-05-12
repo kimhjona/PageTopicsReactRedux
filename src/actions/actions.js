@@ -1,11 +1,49 @@
 // add name 
+// import axios from 'axios';
 
-function addName(first, last) {
+// export function getData() {
+//   return axios({
+//     method:'get',
+//     url:'https://medcircle-coding-project.s3.amazonaws.com/api/articles.json',
+//     responseType:'json'
+//   })
+//   .then(function(response) {
+//     console.log(response);
+// });
+// }
+
+export function addTopic(following) {
   return {
-    type: 'ADD_NAME', 
-    first, 
-    last
+    type: 'ADD_TOPIC', 
+    following
   }
 }
 
-export default addName;
+export function removeTopic(following) {
+  return {
+    type: 'REMOVE_TOPIC', 
+    following
+  }
+}
+
+// export function fetchData(url) {
+//   console.log('fetching')
+// 	return function(dispatch) {
+// 		// dispatch(requestData());
+// 		return axios({
+// 			url: url,
+// 			timeout: 20000,
+// 			method: 'get',
+// 			responseType: 'json'
+// 		})
+// 			.then(function(response) {
+// 				// dispatch(receiveData(response.data));
+//         console.log(response)
+// 			})
+// 			.catch(function(response){
+// 				// dispatch(receiveError(response.data));
+// 				// dispatch(pushState(null,'/error'));
+//         console.log(response)
+// 			})
+// 	}
+// };

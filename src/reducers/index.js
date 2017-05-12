@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
-import names from './reducers';
+import { followingFunc } from './followingFunc';
+import { articlesFunc } from './articlesFunc';
+import { topicsFunc } from './topicsFunc';
 
 const rootReducer = combineReducers({
-  names
+  following: followingFunc,
+  articles: articlesFunc,
+  topics: topicsFunc
 });
 
 export default rootReducer;

@@ -4,13 +4,16 @@ import { createStore } from 'redux';
 import rootReducer from '../reducers/index';
 
 // import data
-// api call right here probably
+import articles from '../img/articles.js';
+import topics from '../img/topics.js';
 
 // create object for default data
 const defaultState = {
-  names: "Jon Kim"
+  following: '',
+  articles,
+  topics
 }
 
-const store = createStore(rootReducer, defaultState);
+const store = createStore(rootReducer, defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default store;
