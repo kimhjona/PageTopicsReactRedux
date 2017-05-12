@@ -4,9 +4,9 @@ import { articlesFunc } from './articlesFunc';
 import { topicsFunc } from './topicsFunc';
 
 const rootReducer = combineReducers({
-  following: followingFunc,
+  following: topicsFunc,
   articles: articlesFunc,
-  topics: topicsFunc
+  topics: articlesFunc
 });
 
 export default rootReducer;

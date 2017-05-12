@@ -71,10 +71,22 @@ p {
 }
 
 .follow {
+  height: 22px;
   margin-top: -2px;
   border: 1px solid rgba(64, 56, 58, .1);
   border-radius: 3px;
   color: #40383a;
+  cursor: pointer;
+  padding: 0 8px 2px 8px;
+  font-size: 15px;
+}
+
+.following {
+  height: 22px;
+  margin-top: -2px;
+  border: 1px solid #b5103a;
+  border-radius: 3px;
+  color: #b5103a;
   cursor: pointer;
   padding: 0 8px 2px 8px;
   font-size: 15px;
@@ -90,8 +102,16 @@ p {
 }
 
 .topicItem {
-  padding-bottom: 10px;
+  margin-top: 6px;
   color: #40383a;
+}
+
+.topicArea {
+  padding: 6px 0 0 0;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(64,56,58,.1);
 }
 
 .header {
@@ -155,7 +175,7 @@ p {
     font: 2em 'Kaushan Script', cursive;
   }
   .button {
-    font-size: 1em; 
+    font-size: 2em; 
     width: 50%;
     margin: 0;
     border: 1px solid #40383a;

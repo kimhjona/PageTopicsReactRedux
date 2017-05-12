@@ -3,25 +3,17 @@ import Topic from './Topic';
 import store from '../store/store';
 
 class TopicList extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      items: store.getState().topics.data
-    };
-  }
-
-  componentDidMount() {
-      console.log('Component DID MOUNT!')
-      console.log(this.state.items)
-   }
 
   render() {
-    const topicItems = this.state.items;
+    const topicItems = store.getState().topics.data;
     const topicItemsList = topicItems.sort((a,b) => a.name > b.name).map(obj => {
-      return <Topic item={ obj.name } key={ obj.id } />
+      if (store.getState().following.includes(obj.id)) {
+        return <Topic item={ obj.name } key={ obj.id } id={ obj.id } followed={ true }/>
+      } else {
+        return <Topic item={ obj.name } key={ obj.id } id={ obj.id } followed={ false }/>
+      }
     })
-    
+
     return (
       <div className='entireList'>
         <div className='listItem'>

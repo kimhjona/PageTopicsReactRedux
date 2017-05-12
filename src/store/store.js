@@ -9,7 +9,7 @@ import topics from '../img/topics.js';
 
 // create object for default data
 const defaultState = {
-  following: '',
+  following: [5, 1, 59],
   articles,
   topics
 }

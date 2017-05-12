@@ -12,17 +12,19 @@
 // });
 // }
 
-export function addTopic(following) {
+export function addTopic(followingId) {
+  console.log('addTopicAction')
   return {
     type: 'ADD_TOPIC', 
-    following
+    followingId
   }
 }
 
-export function removeTopic(following) {
+export function removeTopic(followingId) {
+  console.log('removeTopicAction')
   return {
     type: 'REMOVE_TOPIC', 
-    following
+    followingId
   }
 }
 
