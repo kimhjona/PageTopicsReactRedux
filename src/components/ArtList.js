@@ -5,8 +5,20 @@ import store from '../store/store'
 class ArtList extends Component {
   render() {
     let articles = store.getState().articles.data;
-    // console.log(articles)
-    let articlesData = articles.map(obj => {
+    const following = store.getState().following;
+    console.log('following:', following)
+    console.log('articles before:', articles)
+    console.log(store.getState())
+    let newArticles = [];
+    articles.forEach(el => {
+      let included = false;
+      el.topics.forEach(e => {
+        if (following.includes(e.id)) included = true;
+      })
+      if (included) newArticles.push(el)
+    })
+    console.log('newArticles:', newArticles)
+    let articlesData = newArticles.map(obj => {
       return <ListItem title={ obj.title } source={ obj.attribution.displayName } data={ obj.date } summary={ obj.summary } likes={ obj.likesCount } key={obj.id} url={ obj.url } date={ obj.createdAt }/>
     })
 
