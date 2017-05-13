@@ -2,23 +2,21 @@ import React, { Component } from 'react';
 
 class ListItem extends Component {
   render() {
+    console.log('this.props:',this.props);
     return (
       <div className='listItem'>
-        <h1>Title goes here</h1>
+        <h1>{ this.props.title }</h1>
         <p>
-          Source: http://lskjfsdalkfjsdl.com
+          Source: { this.props.source }
         </p>
         <p className='grey'>
           May 9
         </p>
         <div className='summary'>
-          For the new study, Canadian researchers analyzed data from more than 100,000 people to determine if this was true. TUESDAY,
-          May 9, 2017 (HealthDay News) -- Vitamin D supplements aren't likely to reduce the risk of asthma, allergies or the
-          skin condition eczema in children or adults, a new study finds. Previous research had suggested that low vitamin D
-          levels were linked with these "atopic" conditions. <a className='a' href='#'>Read More</a>
+          { this.props.summary } <a className='a' href={'' + this.props.url} >Read More</a>
         </div>
         <hr/>
-        <span className='like'><img src={require('../img/thumbsup.png')} className='likeImg' alt="Like Button" width='20' height='20'/>26 Likes</span>
+        <span className='like'><img src={require('../img/thumbsup.png')} className='likeImg' alt="Like Button" width='20' height='20'/>{ this.props.likes } Likes</span>
       </div>
     );
   }
