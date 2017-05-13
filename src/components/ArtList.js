@@ -5,9 +5,9 @@ import store from '../store/store'
 class ArtList extends Component {
   render() {
     let articles = store.getState().articles.data;
-    console.log(articles)
+    // console.log(articles)
     let articlesData = articles.map(obj => {
-      return <ListItem title= { obj.title } source={ obj.attribution.displayName } data={ obj.date } summary={ obj.summary } likes={ obj.likesCount } url={ obj.url } />
+      return <ListItem title={ obj.title } source={ obj.attribution.displayName } data={ obj.date } summary={ obj.summary } likes={ obj.likesCount } key={obj.id} url={ obj.url } date={ obj.createdAt }/>
     })
 
     return (

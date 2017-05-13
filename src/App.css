@@ -102,12 +102,12 @@ p {
 }
 
 .topicItem {
-  margin-top: 6px;
+  /*margin-top: 6px;*/
   color: #40383a;
 }
 
 .topicArea {
-  padding: 6px 0 0 0;
+  padding: 9px 0 5px 0;
   width:100%;
   display: flex;
   justify-content: space-between;
