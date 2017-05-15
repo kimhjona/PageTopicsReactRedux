@@ -9,7 +9,6 @@ class TopicList extends Component {
     let alreadyDone = false;
     setInterval(() => {
       if (store.getState().following.length !== count) {
-        // console.log('changed!')
         if (!alreadyDone) this.forceUpdate();
         alreadyDone = true;
         count = store.getState().following.length;

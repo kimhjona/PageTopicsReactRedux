@@ -1,26 +1,11 @@
 import React, { Component } from 'react';
 import store from '../store/store';
-// import addTopic from '../actions/actions';
 
 class Topic extends Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     follow: this.props.followed
-  //   };
-  //   // this._onButtonClick = this._onButtonClick.bind(this);
-  // }
-
-
   topicToggle = (i) => {
-    // console.log('addingTopic func called');
+    // action is right here
     store.dispatch({ type: 'TOPIC_TOGGLE', id: i});
-    // console.log(this.state)
-    // this.setState({
-    //   follow: !this.state.follow
-    // })
-    // setTimeout(() => console.log(this.state), 5000)
   }
 
   render() {

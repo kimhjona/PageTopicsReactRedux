@@ -1,6 +1,3 @@
-
-
-
 export function topicsFunc(state = [], action) {
   if (action.type === 'TOPIC_TOGGLE') {
     if (!state.includes(action.id)) state.push(action.id);

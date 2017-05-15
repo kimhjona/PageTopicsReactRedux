@@ -1,12 +1,15 @@
 import { combineReducers } from 'redux';
-// import { followingFunc } from './followingFunc';
-import { articlesFunc } from './articlesFunc';
-import { topicsFunc } from './topicsFunc';
+import { topics, topicsIsLoading } from './topicsFetch';
+import { items, itemsIsLoading, } from './itemsFunc';
+import { topicsFunc } from './topicsToggle';
 
 const rootReducer = combineReducers({
   following: topicsFunc,
-  articles: articlesFunc,
-  topics: articlesFunc
+  articles: items,
+  topics: topics,
+  itemsIsLoading,
+  topicsIsLoading
 });
+
 
 export default rootReducer;

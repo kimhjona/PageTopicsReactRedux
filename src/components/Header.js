@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { itemsFetchData, topicsFetchData } from '../actions/actions';
 
 class Header extends Component {
+
+  componentDidMount() {
+    this.props.fetchData('https://medcircle-coding-project.s3.amazonaws.com/api/articles.json');
+    this.props.fetchTopics('https://medcircle-coding-project.s3.amazonaws.com/api/topics.json');
+  }
+
   render() {
     return (
       <div>
@@ -17,6 +25,21 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    items: state.items,
+    isLoading: state.itemsIsLoading
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchData: (url) => dispatch(itemsFetchData(url)),
+    fetchTopics: (url) => dispatch(topicsFetchData(url))
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+
 
 
